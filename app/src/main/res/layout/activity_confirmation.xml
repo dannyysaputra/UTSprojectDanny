@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:layout_margin="16dp"
     tools:context=".ConfirmationActivity">
 
     <!-- Judul Halaman -->
@@ -18,7 +19,8 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
 
     <!-- Confirmation Food Name -->
     <TextView
@@ -56,7 +58,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thanks for your order and please wait for delivering by nearest courier"
+        android:text="Sabar nyaa, dagoan heula sakedap nuju disiapkeun..."
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_marginBottom="8dp"/>
@@ -65,6 +67,8 @@
         android:id="@+id/backtoMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Back to Menu" />
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:text="Balik ka menu" />
 
 </LinearLayout>

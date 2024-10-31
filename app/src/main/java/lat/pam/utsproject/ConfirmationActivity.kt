@@ -1,6 +1,8 @@
 package lat.pam.utsproject
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,9 +27,17 @@ class ConfirmationActivity : AppCompatActivity() {
         val notes = intent.getStringExtra("notes")
 
         // Display the retrieved data
-        findViewById<TextView>(R.id.foodNameTextView).text = "Food Name: $foodName"
-        findViewById<TextView>(R.id.servingsTextView).text = "Number of Servings: $servings"
-        findViewById<TextView>(R.id.nameTextView).text = "Ordering Name: $name"
-        findViewById<TextView>(R.id.notesTextView).text = "Additional Notes: $notes"
+        findViewById<TextView>(R.id.foodNameTextView).text = "Dahareun: $foodName"
+        findViewById<TextView>(R.id.servingsTextView).text = "Jumlah: $servings"
+        findViewById<TextView>(R.id.nameTextView).text = "Atas Nama: $name"
+        findViewById<TextView>(R.id.notesTextView).text = "Catetan: $notes"
+
+        val backToMenuButton = findViewById<Button>(R.id.backtoMenu)
+
+        backToMenuButton.setOnClickListener() {
+            val intent = Intent(this, ListFoodActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

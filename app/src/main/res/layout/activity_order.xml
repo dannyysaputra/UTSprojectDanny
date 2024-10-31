@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:layout_margin="16dp"
     tools:context=".OrderActivity">
 
         <!-- Judul Halaman -->
@@ -24,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Food Name"
+            android:text="Dahareun"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
 
@@ -40,14 +41,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Number of Servings"
+            android:text="Jumlah"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
         <EditText
             android:id="@+id/etServings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter number of servings"
+            android:hint="Asupkeun jumlahna"
             android:inputType="number"
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
@@ -56,14 +57,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ordering Name"
+            android:text="Atas Nama"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ordering name by"
+            android:hint="Ngaran nu mesenna"
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
@@ -72,14 +73,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Additional Notes"
+            android:text="Catetan"
             android:textSize="18sp"
             android:layout_marginBottom="8dp"/>
         <EditText
             android:id="@+id/etNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter any additional notes"
+            android:hint="Asupkeun catetan didieu"
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
@@ -88,7 +89,8 @@
             android:id="@+id/btnOrder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Place Order"
+            android:text="Gass pesen"
+            android:backgroundTint="@android:color/holo_green_dark"
             android:textColor="@android:color/white"
             android:padding="12dp"/>
 
